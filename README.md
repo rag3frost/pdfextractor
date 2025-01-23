@@ -1,5 +1,5 @@
 
-```markdown
+
 # PDF Information Extractor
 
 A modern web application that extracts key information from PDF resumes and documents. The application uses AI-powered Named Entity Recognition (NER) and pattern matching to identify and extract names.
@@ -15,18 +15,18 @@ A modern web application that extracts key information from PDF resumes and docu
 
 ## Project Structure
 
-
+```
 .
 ├── .streamlit/        # Streamlit configuration
 └── backend/           # Python PDF processing module
     └── ai_pdf_parser.py  # Core PDF parsing logic
-
+```
 
 ## Prerequisites
-
+```
 - Python 3.8 or higher
 - pip (Python package manager)
-
+```
 ## Setup Instructions
 
 1. **Clone the repository**
@@ -84,6 +84,6 @@ Contributions are welcome! Please feel free to submit a Pull Request.
 ## License
 
 This project is licensed under the MIT License - see the LICENSE file for details.
-```
+
 
 
