@@ -1,4 +1,3 @@
-Here is the updated `README.md` content in markdown format:
 
 ```markdown
 # PDF Information Extractor
@@ -16,12 +15,12 @@ A modern web application that extracts key information from PDF resumes and docu
 
 ## Project Structure
 
-```
+
 .
 ├── .streamlit/        # Streamlit configuration
 └── backend/           # Python PDF processing module
     └── ai_pdf_parser.py  # Core PDF parsing logic
-```
+
 
 ## Prerequisites
 
@@ -34,18 +33,18 @@ A modern web application that extracts key information from PDF resumes and docu
    ```bash
    git clone <repository-url>
    cd <project-directory>
-   ```
+
 
 2. **Install Python Dependencies**
    ```bash
    cd backend
    pip install -r requirements.txt
-   ```
+  
 
 3. **Start the Streamlit App**
    ```bash
    streamlit run backend/ai_pdf_parser.py
-   ```
+  
 
 4. **Access the Application**
    - Open your browser and navigate to the URL provided by Streamlit
@@ -87,4 +86,4 @@ Contributions are welcome! Please feel free to submit a Pull Request.
 This project is licensed under the MIT License - see the LICENSE file for details.
 ```
 
-You can copy and paste this content into your `README.md` file.
+
