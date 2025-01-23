@@ -1,6 +1,9 @@
+Here is the updated `README.md` content in markdown format:
+
+```markdown
 # PDF Information Extractor
 
-A modern web application that extracts key information from PDF resumes and documents. The application uses AI-powered Named Entity Recognition (NER) and pattern matching to identify and extract names, phone numbers (with international formats), addresses, and professional roles from PDF files.
+A modern web application that extracts key information from PDF resumes and documents. The application uses AI-powered Named Entity Recognition (NER) and pattern matching to identify and extract names.
 
 ## Features
 
@@ -15,17 +18,13 @@ A modern web application that extracts key information from PDF resumes and docu
 
 ```
 .
-├── frontend/          # React frontend application
-│   ├── src/              # Source files
-│   ├── public/           # Public assets
-│   └── package.json      # Frontend dependencies
-└── backend/        # Python PDF processing module
+├── .streamlit/        # Streamlit configuration
+└── backend/           # Python PDF processing module
     └── ai_pdf_parser.py  # Core PDF parsing logic
 ```
 
 ## Prerequisites
 
-- Node.js (v14 or higher)
 - Python 3.8 or higher
 - pip (Python package manager)
 
@@ -37,27 +36,19 @@ A modern web application that extracts key information from PDF resumes and docu
    cd <project-directory>
    ```
 
-2. **Set up the Frontend**
-   ```bash
-   cd frontend
-   npm install
-   ```
-
-3. **Install Python Dependencies**
+2. **Install Python Dependencies**
    ```bash
    cd backend
-   pip install spacy pdfplumber PyPDF2
-   python -m spacy download en_core_web_sm
+   pip install -r requirements.txt
    ```
 
-4. **Start the Development Server**
+3. **Start the Streamlit App**
    ```bash
-   cd frontend
-   npm run dev
+   streamlit run backend/ai_pdf_parser.py
    ```
 
-5. **Access the Application**
-   - Open your browser and navigate to `http://localhost:5173`
+4. **Access the Application**
+   - Open your browser and navigate to the URL provided by Streamlit
    - The application should now be running and ready to use
 
 ## Usage
@@ -73,12 +64,6 @@ A modern web application that extracts key information from PDF resumes and docu
 
 ## Technical Details
 
-### Frontend
-- Built with React + Vite
-- Modern UI components
-- Real-time PDF processing
-- Confidence score visualization
-
 ### PDF Processing
 - Uses Python with spaCy for NLP
 - Multiple PDF text extraction methods (PDFPlumber, PyPDF2)
@@ -90,9 +75,8 @@ A modern web application that extracts key information from PDF resumes and docu
 If you encounter any issues:
 
 1. Ensure all dependencies are correctly installed
-2. Check if Python and Node.js versions meet the requirements
-3. Verify that the spaCy model is properly downloaded
-4. Clear browser cache if the frontend doesn't update
+2. Check if Python versions meet the requirements
+3. Verify that the necessary models are properly downloaded
 
 ## Contributing
 
@@ -100,4 +84,7 @@ Contributions are welcome! Please feel free to submit a Pull Request.
 
 ## License
 
-This project is licensed under the MIT License - see the LICENSE file for details. 
+This project is licensed under the MIT License - see the LICENSE file for details.
+```
+
+You can copy and paste this content into your `README.md` file.
